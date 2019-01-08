@@ -18,6 +18,12 @@ infrastructureConfig:
     remoteBranch: "6.1.1"
     description: Provision Infra for running intg tests
     scripts:
+    - name: 'prod-wso2-ei-test-deployment'
+      description: ''
+      type: CLOUDFORMATION
+      file: integrator/Minimum-HA/mqtt.yaml
+      inputParameters:
+        KeyPairName: "deployment-prod"
     - name: 'prod-wso2-ei-scenario-deployment'
       description: ''
       type: CLOUDFORMATION
