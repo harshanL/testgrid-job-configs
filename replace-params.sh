@@ -13,7 +13,7 @@ do
 	paramName=${param:0:$idx}
 	if [[ $paramName == "params-file" ]]; then
   		PARAM_PP_FILE=${param:$idx+1}
-      break
+      		break
 	fi
 done
 
