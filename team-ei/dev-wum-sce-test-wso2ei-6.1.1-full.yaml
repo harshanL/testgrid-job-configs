@@ -36,6 +36,7 @@ infrastructureConfig:
         DBPassword: "DB_Password"
         ProductVersion: "6.1.1"
         InternalPrepareForTest: "True"
+        params-file: /etc/puppet/code/environments/production/modules/ei611/manifests/params.pp
 scenarioConfigs:
 - testType: TESTNG
   remoteRepository: "https://github.com/wso2/product-ei.git"
