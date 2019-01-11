@@ -22,5 +22,5 @@ do
     idx=$(strindex $param =)
     paramName=${param:0:$idx}
     paramValue=${param:$idx+1}
-    sed -i "s|${paramName}\s=\s.*|${paramName} = '${paramValue}'|g" params.pp
+    sed -i "s|${paramName}\s=\s.*|${paramName} = '${paramValue}'|g" "$PARAM_PP_FILE"
 done
